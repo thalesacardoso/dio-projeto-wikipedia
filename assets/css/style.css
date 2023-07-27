@@ -1,38 +1,161 @@
-body, html {
+/***************************
+Paleta de cores
+Azul escuro             #186cfd
+Azul claro              #247ffe
+Cinza escuro            #202124
+
+bordas cinza claro:     #cdcdcd
+Textos cinza escuro:    #555555
+Fundo claro::after      #f9f9f9
+
+***************************/
+
+
+
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #555;
 }
-ul { list-style: none; padding-left: 5px; }
-a { color:blue; text-decoration: none;}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+}
+
+a {
+    color: #247ffe;
+    text-decoration: none;
+}
+
+figure {
+    text-align: center;
+}
+
+ul { list-style: none; }
+
+/****************************************************
+                ESTILO DO TOPO
+****************************************************/
+
+header { 
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+}
+
+header .logo img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5px 10px;
+}
+
+header .pesquisa {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+header .pesquisa input {
+    width: 40%;
+    height: 35px;
+    border: 1px solid #cdcdcd;
+    border-radius: 5px 0 0 5px;
+    padding: 5px 15px;
+    color: #555;
+}
+
+header .pesquisa button {
+    background-color: #247ffe;
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+header .pesquisa button:hover {
+    background-color: #186cfd ;
+}
+
+
+header .login {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+header .login a {
+    padding: 10px;
+    margin-right: 5px;
+}
+
+header .login a:hover {
+    text-decoration: underline;
+}
+
+/****************** FIM HEADER ******************************/
+
+nav {
+    border-right: solid 1px #cdcdcd;
+}
+
+
 .bar {
     background-color: #f9f9fb;
     padding:15px;
     border-top: solid 1px #cdcdcd;
     border-bottom: solid 1px #cdcdcd;
 }
+
 .content {
-    max-width: 1440px;
+    max-width: 1400px;
     margin: auto;
     grid-gap: 3rem;
     display: grid;
     gap: 3rem;
-    grid-template-areas: "sidebar main anchors";
+    grid-template-areas: "nav main aside";
     grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
     padding-left: 1rem;
     padding-right: 1rem;
 }
-.footer {
-    min-height: 100px;
-    border-top: solid 1px #cdcdcd;
-}
-.anchors {
+
+aside {
     border-left: solid 1px #cdcdcd;
     padding-left: 15px;
 }
-.sidebar {
-    border-right: solid 1px #cdcdcd;
+
+footer {
+    max-width: 1400px;
+    margin: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
-figure {
-    text-align: center;
-}
+
+
