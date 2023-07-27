@@ -120,19 +120,41 @@ header .login a:hover {
     text-decoration: underline;
 }
 
-/****************** FIM HEADER ******************************/
-
+/****************************************************
+                ESTILO DO MENU
+****************************************************/
 nav {
-    border-right: solid 1px #cdcdcd;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(#186cfd, #247ffe );
+}
+
+nav ul {
+    width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 2px;
+    line-height: 40px;
+}
+
+nav ul li a {
+    color: white;
+    padding: 10px 10px;
+}
+
+nav ul li a:hover {
+    color: #202124;
 }
 
 
-.bar {
-    background-color: #f9f9fb;
-    padding:15px;
-    border-top: solid 1px #cdcdcd;
-    border-bottom: solid 1px #cdcdcd;
-}
+/****************************************************
+                ESTILO DO MAIN + CONTANT
+****************************************************/
 
 .content {
     max-width: 1400px;
