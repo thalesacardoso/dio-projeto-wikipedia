@@ -11,7 +11,6 @@ Fundo claro::after      #f9f9f9
 ***************************/
 
 
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -68,11 +67,14 @@ figcaption {
     font-size: 10px;
 }
 
-ul { list-style: none; }
+ul { 
+    list-style: none; 
+}
 
 section {
     margin-bottom: 30px;
 }
+
 
 /****************************************************
                 ESTILO DO TOPO
@@ -128,7 +130,6 @@ header .pesquisa button:hover {
     background-color: #186cfd ;
 }
 
-
 header .login {
     width: 20%;
     display: flex;
@@ -143,6 +144,7 @@ header .login a {
 header .login a:hover {
     text-decoration: underline;
 }
+
 
 /****************************************************
                 ESTILO DO MENU
@@ -188,6 +190,7 @@ nav ul li a:hover {
     justify-content: center;
 }
 
+/***********  ASIDE  ************/
 aside {
     width: 20%;
     padding: 15px;
@@ -198,7 +201,6 @@ aside.esquerdo {
 }
 
 aside.esquerdo ul {
-    #background-color: red;
     width: 100%;
     min-height: 500px;
 }
@@ -221,19 +223,11 @@ aside.esquerdo ul li a:hover {
     padding-left: 5px;
 }
 
-
-
-
-
-
-
-
 aside.direito {
     border-left: solid 1px #cdcdcd;
 }
 
 aside.direito section {
-    #background-color: red;
     width: 100%;
     padding: 10px;
     border: 1px solid #cdcdcd;
@@ -250,9 +244,15 @@ aside.direito section p {
     line-height: 18px;
 }
 
+
+/***********  MAIN  ************/
 main {
     width: 60%;
     padding: 15px;
+}
+
+main figure.capa img {
+    width: 100%;
 }
 
 main section figure {
@@ -264,8 +264,9 @@ main section figure img {
 }
 
 
-
-
+/****************************************************
+            ESTILO DO MAIN + CONTANT + ASIDE
+****************************************************/
 
 footer {
     max-width: 1400px;
